@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-18 10:11:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-18 10:16:55
+* @Last Modified time: 2018-03-15 20:00:40
 */
 @charset "UTF-8";
 /*css 初始化 */
@@ -18,7 +18,7 @@ img {border:0; vertical-align:middle; }  /*  去掉图片底侧默认的3像素�
 table { border-collapse:collapse; }/*合并边框*/
 body {
     font:12px/150% Arial,Verdana,"\5b8b\4f53";/*unicode 编码 宋体*/
-    color:#fff;
+    color:#000;
     background:#fff
 }
 /*清除浮动 -- 减少浏览器渲染负担 -- 推荐*/
