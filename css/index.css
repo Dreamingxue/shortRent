@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-03-20 18:24:23
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-20 18:58:53
+* @Last Modified time: 2018-03-22 10:33:57
 */
 .header-box{
     width: 100%;
@@ -11,6 +11,7 @@
     top: 0;
     left: 0;
     z-index: 100000;
+    background: pink;
 }
 .header-box .title{
     width: 50%;
