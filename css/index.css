@@ -1,0 +1,25 @@
+/*
+* @Author: Marte
+* @Date:   2018-03-20 18:24:23
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-03-20 18:58:53
+*/
+.header-box{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+.header-box .title{
+    width: 50%;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+.header-box .nav li{
+    margin-left: 20px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
