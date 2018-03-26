@@ -2,26 +2,86 @@
 * @Author: Marte
 * @Date:   2018-03-20 18:24:23
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-22 13:53:52
+* @Last Modified time: 2018-03-26 17:28:02
 */
+.section1{
+    position: relative;
+}
 .header-box{
     width: 100%;
-    height: 50px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100000;
-    background: pink;
 }
-.header-box .title{
-    width: 50%;
-    line-height: 50px;
-    box-sizing: border-box;
+.header-box .logo{
+    margin-left: 300px;
+    margin-top: 48px;
+}
+.header-box .nav{
+    margin-top: 60px;
+    margin-right: 250px;
 }
 .header-box .nav li{
+    margin-right: 50px;
+}
+.header-box .nav li a{
+    color: #fff;
+    font-size: 20px;
+}
+.section1 .user-btn{
+    font-size: 18px;
+    width: 64px;
+    height: 30px;
     text-align: center;
-    margin-left: 20px;
-    height: 50px;
-    line-height: 50px;
+    line-height: 30px;
+    position: absolute;
+    right: 100px;
+    bottom: 80px;
+    z-index: 10000;
     cursor: pointer;
+}
+.section1 .login{
+    right: 170px;
+}
+.section1 .slide{
+    background: url('../img/banner1.png') no-repeat 0 0;
+    background-size:cover;
+}
+.login-panel{
+    position: absolute;
+    z-index: 10000;
+    display: none;
+}
+.login-panel .login-box{
+    width: 800px;
+    height: 400px;
+    background: #fff;
+}
+.login-panel .close{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #fff url('../img/guanbi.png') no-repeat center center;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.section2{
+    background: url('../img/background-1.png') no-repeat 0 0;
+    background-size:cover;
+}
+.section3{
+    background: url('../img/background-2.png') no-repeat 0 0;
+    background-size:cover;
+}
+.section4{
+    background: url('../img/background-3.png') no-repeat 0 0;
+    background-size:cover;
+}
+/* 修改fullPage样式 */
+.fp-slidesNav ul{
+    text-align: center;
+}
+.fp-slidesNav ul li a span{
+    background: #fff;
 }

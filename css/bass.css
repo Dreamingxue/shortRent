@@ -1,18 +1,13 @@
-<<<<<<< HEAD
-=======
 /*
 * @Author: Marte
 * @Date:   2017-09-18 10:11:25
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-15 20:00:40
+* @Last Modified time: 2018-03-26 14:53:49
 */
->>>>>>> 2d5b89fc0ac16b7cf668646b115397eee14e422f
-@charset "UTF-8";
 /*css 初始化 */
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; /*去掉input获取焦点后的外边框*/}
 ul, ol { list-style:none; }
-<<<<<<< HEAD
 input { padding-top:0; padding-bottom:0; font-family: "Microsoft YaHei","SimSun","宋体";}
 select, input,label { vertical-align:middle; }
 select, input, textarea { font-size:12px; margin:0; }
@@ -26,7 +21,7 @@ body {
 body,html{
     width: 100%;
     height: 100%;
-=======
+}
 input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
 select, input,label { vertical-align:middle; }
 select, input, textarea { font-size:12px; margin:0; }
@@ -36,9 +31,8 @@ img {border:0; vertical-align:middle; }  /*  去掉图片底侧默认的3像素�
 table { border-collapse:collapse; }/*合并边框*/
 body {
     font:12px/150% Arial,Verdana,"\5b8b\4f53";/*unicode 编码 宋体*/
-    color:#000;
+    color:#fff;
     background:#fff
->>>>>>> 2d5b89fc0ac16b7cf668646b115397eee14e422f
 }
 /*清除浮动 -- 减少浏览器渲染负担 -- 推荐*/
 .clearfix:before,.clearfix:after{
@@ -55,11 +49,8 @@ s,i,em{font-style:normal;text-decoration:none;}
 
 /*公共类*/
 .w {  /*版心 提取 */
-<<<<<<< HEAD
     margin:0 auto;
-=======
     width: 1210px;margin:0 auto;
->>>>>>> 2d5b89fc0ac16b7cf668646b115397eee14e422f
 }
 .fl {
     float:left
