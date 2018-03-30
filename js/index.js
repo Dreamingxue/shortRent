@@ -1,52 +1,45 @@
+//初始化fullPage配置
 $(function(){
     $('#container').fullpage({
-        anchors:['page1','page2','page3','page4'],
+        anchors:['page1','page2','page3','page4','page5'],
         menu:'#fullpageMenu',
         controlArrows:true,
-        paddingTop:'50px',
         navigation:false,
         showActiveTooltip:true,
         slidesNavigation:true,
-        controlArrowColor: 'pink'
+        slidesNavPosition: 'bottom',
+        controlArrowColor: '#fff'
 
     });
 });
-$.ajaxSetup({
-    error : function(xhr, textStatus, thrownError) {
-        var msg = xhr.readyState != 0 && xhr.readyState != 1 ? xhr.statusText : textStatus;
-        var error = xhr.status + ":" + msg;
-        alert(xhr.status)
-        if(xhr.status != 200){
-            if(textStatus == 'timeout'){
-                alert('网络不稳定，请求超时');
-                xhr.abort();
-            }else{
-                alert('网络异常');
-            }
-        }
-        //$.messager.alert('温馨提示',error,'error');
-    }
+//弹框居中
+function getWindowSize(ele){
+    var w = $(window).outerWidth();
+    var h = $(window).outerHeight();
+    var nw = $(ele).outerWidth();
+    var nh = $(ele).outerHeight();
+    $(ele).css({'margin-left':(w-nw)/2,'margin-top':(h-nh)/2});
+}
+getWindowSize('.login-panel');
+$(window).resize(function(){
+   getWindowSize('.login-panel');
 });
-$(function(){
-    //.ajaxError事件定位到document对象，文档内所有元素发生ajax请求异常，都将冒泡到document对象的ajaxError事件执行处理
-    $(document).ajaxError(
-            //所有ajax请求异常的统一处理函数，处理
-            function(event,xhr,options,exc ){
-                if(xhr.status == 'undefined'){
-                    return;
-                }
-                switch(xhr.status){
-                    case 403:
-                        // 未授权异常
-                        alert("系统拒绝：您没有访问权限。");
-                        break;
+//鼠标悬浮在按钮上的样式
+$('.section1 .user-btn').mouseover(function(event) {
+    $(this).css('border','1px solid #fff').siblings('.section1 .user-btn').css('border','none');
+});
 
-                    case 404:
-                        alert("您访问的资源不存在。");
-                        break;
-                   default:
-                       alert('网络异常');
-                }
-            }
-    );
+//显示/关闭登录注册面板
+$('.section1 .login').click(function(){
+    $('.login-panel').slideDown();
 });
+$('#closeBtn').click(function(){
+    $('.login-panel').slideUp();
+})
+//向下翻页
+$('.down-page').click(function(){
+     $.fn.fullpage.moveSectionDown();
+ })
+$('.up-page').click(function(){
+     $.fn.fullpage.moveSectionUp();
+ })

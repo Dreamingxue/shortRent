@@ -5,57 +5,118 @@
     <meta name=description content="">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>短租</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href=css/bass.css"">
-    <link href="https://cdn.bootcss.com/fullPage.js/2.9.6/jquery.fullpage.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="js/jquery.min.js">
-    <script src="https://cdn.bootcss.com/fullPage.js/2.9.6/jquery.fullpage.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="section">第一屏</div>
-3 　　  <div class="section">第二屏</div>
-4 　　  <div class="section">第三屏</div>
-5 　　  <div class="section">第四屏</div>
-6 　　  <div class="section">第五屏</div>
-    </div>
-</body>
-<script>
-    $(function(){
-　　　  $('#container').fullpage({
-
-        });
-　  });　
-</script>
-=======
     <link rel="stylesheet" type="text/css" href="css/bass.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <div class="header-box" id="fullpageMenu">
-        <div class="title fl">短租平台</div>
-        <ul class="nav fl clearfix">
-            <li class="active fl"><a href="#page1">首页</a></li>
-            <li class="fl"><a href="#page2">活动页</a></li>
-            <li class="fl"><a href="#page3">新闻页</a></li>
-            <li class='fl'><a href="#page4">联系我们</a></li>
-        </ul>
-    </div>
     <div id="container">
-        <div class="section">
-            <div class="slide">Slide    1</div>
-            <div class="slide">Slide    2</div>
-            <div class="slide">Slide    3</div>
-            <div class="slide">Slide    4</div>
+        <div class="section section1 active">
+            <div class="down-page"></div>
+            <div class="header-box">
+                <div class="logo fl">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <ul class="nav fr clearfix">
+                    <li data-menuanchor="page1" class="active fl"><a href="#page1">首页</a></li>
+                    <li data-menuanchor="page2" class="fl"><a href="#page2">别墅预定</a></li>
+                    <li data-menuanchor="page3" class="fl"><a href="#page3">活动展示</a></li>
+                    <li data-menuanchor="page4" class='fl'><a href="#page4">新闻资讯</a></li>
+                    <li data-menuanchor="page5" class='fl'><a href="#page4">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="user-btn login">
+                <span>登录</span>
+            </div>
+            <div class="user-btn register">
+                <span>注册</span>
+            </div>
+            <div class="login-panel">
+                <div class="login-box clearfix">
+                    <div class="left-box login-type fl">
+                        <div>
+                            <span style='color: #555;font-size: 30px;border-bottom: 3px solid #0088FF;padding-bottom: 8px;'>手机短信登录</span>
+                        </div>
+                        <div style="margin-top: 50px;width: 100%;">
+                            <label style="color: #555;font-size: 18px">手机号：</label>
+                            <div class="input" style="width: 210px;">
+                                <input type='text' id="tel">
+                            </div>
+                        </div>
+                        <div style="margin-top: 30px;width: 100%;">
+                            <label style="color: #555;font-size: 18px">验证码：</label>
+                            <div class="input">
+                                <input type="text" id="msg">
+                                <span id="getMsg">获取验证码</span>
+                            </div>
+                        </div>
+                        <div id="loginBtn">登录</div>
+                    </div>
+                    <div class="rigth-box login-type fl">
+                        <div style="text-align: center;">
+                            <span style='color: #555;font-size: 30px;border-bottom: 3px solid #ddd;padding-bottom: 8px;'>其他方式登录</span>
+                        </div>
+                        <div style='text-align: center;'>
+                            <img src="img/weixindenglu.png" alt="微信login"><br>
+                            <span style="color: #555;font-size: 18px;">微信登录</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="close fl" id="closeBtn"></div>
+            </div>
+
+            <div class="slide slide1"></div>
+            <div class="slide slide2"></div>
+            <div class="slide slide3"></div>
+            <div class="slide slide4"></div>
         </div>
-        <div class="section">2222222222</div>
-        <div class="section">3333333333</div>
-        <div class="section">4444444444</div>
+        <div class="section section2">
+            <div class="up-page"></div>
+            <div class="down-page"></div>
+            <div class="container">
+                <div class="content">
+                    <div class="photo-box">
+                        <img src="img/photo-1.png" alt="">
+                    </div>
+                    <div class="info-box clearfix">
+                        <div class="left-info fl">
+                            <div id="title">绿洲-竹林苑 国展中心/虹桥火车站机场</div>
+                            <ul id="info-item">
+                                <li>独栋别墅</li>
+                                <li>可做饭</li>
+                                <li>私家花园</li>
+                                <li>无线网络</li>
+                            </ul>
+                            <div id="homeSize">5室2厅3卫、宜住10人</div>
+                            <div id="address">
+                                <span>上海青浦区高泾路800弄 [近徐泾东地铁站]</span>
+                                <span id="viewMap">查看地图</span>
+                            </div>
+                        </div>
+                        <div class="right-info fr">
+                            <span>当天房价</span>
+                            <span id="price">1000</span>
+                            <div class="view-detail">查看详情</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="section section3">
+            <div class="up-page"></div>
+            <div class="down-page"></div>
+        </div>
+        <div class="section section4">
+            <div class="up-page"></div>
+            <div class="down-page"></div>
+        </div>
+        <div class="section section5">
+            <div class="up-page"></div>
+        </div>
     </div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.fullPage.js"></script>
 <script src="js/index.js"></script>
->>>>>>> 2d5b89fc0ac16b7cf668646b115397eee14e422f
 </html>
