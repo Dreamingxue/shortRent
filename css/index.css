@@ -2,11 +2,16 @@
 * @Author: Marte
 * @Date:   2018-03-20 18:24:23
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-26 17:28:02
+* @Last Modified time: 2018-03-29 20:02:45
 */
 .section1{
     position: relative;
 }
+.section1 .slide{
+    background: url('../img/banner1.png') no-repeat 0 0;
+    background-size:cover;
+}
+/* 导航菜单 */
 .header-box{
     width: 100%;
     position: absolute;
@@ -29,6 +34,44 @@
     color: #fff;
     font-size: 20px;
 }
+/* 翻页按钮 */
+.down-page{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -17px;
+    cursor: pointer;
+    z-index: 100000;
+    width: 30px;
+    height: 30px;
+    border-width: 5px 0 0 5px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    -webkit-transform: rotate(-135deg);
+       -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+         -o-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+}
+.up-page{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -17px;
+    cursor: pointer;
+    z-index: 100000;
+    width: 30px;
+    height: 30px;
+    border-width: 5px 0 0 5px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+/* 登录 */
 .section1 .user-btn{
     font-size: 18px;
     width: 64px;
@@ -44,10 +87,6 @@
 .section1 .login{
     right: 170px;
 }
-.section1 .slide{
-    background: url('../img/banner1.png') no-repeat 0 0;
-    background-size:cover;
-}
 .login-panel{
     position: absolute;
     z-index: 10000;
@@ -59,16 +98,111 @@
     background: #fff;
 }
 .login-panel .close{
+    position: absolute;
+    top: 0;
+    right: -63px;
     width: 60px;
     height: 60px;
-    text-align: center;
     background: #fff url('../img/guanbi.png') no-repeat center center;
-    margin-left: 3px;
+    cursor: pointer;
+}
+.login-box .login-type{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.login-box .input{
+    box-sizing: border-box;
+    border: 1px solid #0088FF;
+    height: 32px;
+    display: inline-block;
+}
+#tel{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+#msg{
+    width: 80px;
+    height: 100%;
+    font-size: 16px;
+}
+#getMsg{
+    width: 80px;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    background: #0088ff;
+    color: #fff;
+    line-height: 30px;
+}
+#loginBtn{
+    width: 280px;
+    height: 40px;
+    border-radius: 3px;
+    background: #0088ff;
+    text-align: center;
+    line-height: 40px;
+    cursor:pointer;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.rigth-box img{
+    margin-top: 80px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 .section2{
     background: url('../img/background-1.png') no-repeat 0 0;
     background-size:cover;
+}
+.section2 .container{
+    width: 78%;
+    height: 77%;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.2);
+}
+.section2 .content{
+    width: 66.6%;
+    height: 100%;
+    margin: 0 auto;
+}
+.section2 .content .photo-box{
+    width: 100%;
+    padding-top: 50px;
+}
+.section2 .content .photo-box img{
+    width: 100%;
+    height: auto;
+}
+.section2 .info-box #title{
+    margin: 22px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#info-item{
+    margin-bottom: 10px;
+}
+#info-item li{
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #fff;
+    border-radius: 14px;
+    margin-right: 8px;
+}
+#homeSize{
+
+
+
+}
+@media (min-width : 1920px){
+    .section2 .info-box .title{
+        font-size: 36px;
+    }
 }
 .section3{
     background: url('../img/background-2.png') no-repeat 0 0;
@@ -79,9 +213,41 @@
     background-size:cover;
 }
 /* 修改fullPage样式 */
+.bottom.fp-slidesNav{
+    bottom: 100px;
+}
 .fp-slidesNav ul{
     text-align: center;
 }
 .fp-slidesNav ul li a span{
     background: #fff;
+}
+.fp-prev.fp-controlArrow{
+    left: 100px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-width: 8px 0 0 8px;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+.fp-next.fp-controlArrow{
+    right: 100px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-width: 8px 8px 0 0;
+    border-style: solid;
+    border-color: rgba(255,255,255,0.5);
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
 }
