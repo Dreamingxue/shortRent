@@ -43,3 +43,7 @@ $('.down-page').click(function(){
 $('.up-page').click(function(){
      $.fn.fullpage.moveSectionUp();
  })
+//点击查看详情
+$('#detail').click(function(){
+
+})
