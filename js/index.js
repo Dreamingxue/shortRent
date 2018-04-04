@@ -44,6 +44,8 @@ $('.up-page').click(function(){
      $.fn.fullpage.moveSectionUp();
  })
 //点击查看详情
-$('#detail').click(function(){
+$('.view-detail').click(function(){
+    $('.summary-box').fadeOut();
+    $('.detail-box').fadeIn();
 
 })
